@@ -3,268 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <!-- 若电脑安装了IE9，那么使用IE9模式，如果安装了chrome，那么使用chrome内核 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>欢迎页</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="g-head f-highter">
-        <div id="m-ibner" class="m-banner m-ibner"></div>
-        <div class="m-nav">
-            <div class="u-logo"></div>
-            <div class="m-menu">
-                <div id="u-toggle" class="u-toggle"><i class="Hui-iconfont">&#xe6f5;</i></div>
-                <div class="u-buy"><a href="#"><i class="Hui-iconfont">&#xe670;</i><em>0</em></a></div>
-                <ul id="m-menu">
-                    <li class="u-master"><a href="#">成为农场主</a></li>
-                    <li id="m-help" class="m-help">
-                        <a href="#">帮助
-                        <dl>
-                            <dt>推荐的文章</dt>
-                            <dd><a href="#">入门指南</a></dd>
-                        <dd><a href="#">我是否能够更改已确认的订购?</a></dd>
-                        <dd>
-                            <a href="#">我需要为订购支付多少费用?</a>
-                        </dd>
-                        <dd>
-                            <a href="#">Pntar是如何处理付款的?</a>
-                        </dd>
-                        <dd><a href="#">访问帮助中心</a></dd>
-                        </dl>
-                        </a>
-                    </li>
-                    <li><a href="#">注册</a></li>
-                    <li><a href="#">登录</a></li>
-                </ul>
-            </div>
-
-        </div>
+    <div id="g-wel" class="g-head f-highter">
+        <div id="m-welbner" class="m-banner m-welbner"></div>
         <div class="m-hvcter">
-            <div class="m-wrap m-iads">
-                <h1>生鲜是一种贴心的企业福利品！</h1>
-                <p>用心的企业福利，是一种态度。</p>
-                <p>每一个农产品都是农场直供，健康生态可溯源。</p>
-                <p><a href="#">开始采购</a></p>
+            <div class="m-wrap m-city">
+                <h1>盼他</h1>
+                <div class="m-content">
+                    <h2>动动手指就能感受到真实的农场</h2>
+                    <p>
+                        从全国各地农场购买可送货上门的新鲜农产品, 所有产品均大力推崇<strong>原生态生产</strong>, 客户服务<strong>及时到位</strong>可放心购买!
+                    </p>
+                    <form name="cityForm" action="#" method="POST">
+                        <p><input type="text" name="city" placeholder="你的城市" required></p>
+                        <p><button type="submit">开始购物</button></p>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="m-bcinfo">
-            <div class="m-bcwrap m-search">
-                <form action="#" method="POST">
-                    <label for="search">
-                        <input id="search" name="search" type="text" placeholder="搜索健康食材">
-                        <button type="submit">搜索</button></label>
-                </form>
-            </div>
+        <div class="m-bcinfo u-quote">
+            <p id="u-welinfo" class="m-bcwrap">产自著名的“中国脐橙之乡”！秭归脐橙品质优良, 风味独特，<br />具有皮薄色鲜、肉脆汁多、香味浓郁、酸甜可口等特点！<br /> - 秭归脐橙. // 宜昌, 湖北</p>
         </div>
     </div>
-    <div class="g-main m-ip">
+    <div id="g-app" class="g-main m-down">
         <div class="g-wrap">
-            <ul class="m-ftrlist">
-                <li class="u-icon-brdn">
-                    <div class="m-ftr">
-                        <h3>价格实惠</h3>
-                        <small>比中间商价格更低</small>
-                    </div>
-                </li>
-                <li class="u-icon-pt">
-                    <div class="m-ftr">
-                        <h3>农场体验</h3>
-                        <small>买什么都有新鲜的感觉</small>
-                    </div>
-                </li>
-                <li class="u-icon-adr">
-                    <div class="m-ftr">
-                        <h3>地方特色</h3>
-                        <small>尽览各色地方食材</small>
-                    </div>
-                </li>
-            </ul>
-            <div class="m-ftrbl"></div>
-            <div class="m-plist">
-                <h2>爆款推荐</h2>
-                <p>精心挑选出的热门产品</p>
-                <ul>
-                    <li>
-                        <a href="#">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>[秋葵籽油]</h3>
-                                <p>上海市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>纽荷尔脐橙</h3>
-                                <p>贺州市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>羔羊前腿 净重2斤左右</h3>
-                                <p>赤峰市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>羔羊后腿 净重3斤左右</h3>
-                                <p>赤峰市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>羔羊排骨 净重2斤左右</h3>
-                                <p>赤峰市</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="u-lbbtn"><a href="#">查看所有爆款推荐</a></div>
+            <div class="m-downinfo">
+                <h3>掌上Pntar</h3>
+                <p>带你领略全国各地的生态农场。</p>
+                <p class="m-downbtn"><a class="u-downios" title="点击下载ios版" rel="external nofollow">App Store</a>
+                    <a class="u-downan" title="点击下载android版本" rel="external nofollow">Android</a></p>
+                <p>您可以在各大安卓应用市场 <em>豌豆荚, 百度, 360, 腾讯, 小米</em> 下载我们最新版本的手机App。全中国农场体验，玩转于指尖！</p>
             </div>
-            <div class="m-plist m-phots">
-                <h2>热卖产品</h2>
-                <p>在盼她上卖得最好的产品</p>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>老峪沟山养野山猪肉【排骨 大排】</h3>
-                                <p>北京市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>老峪沟山养土猪肉【精五花肉】</h3>
-                                <p>北京市</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="m-pinfo">
-                                <h3>老峪沟山养土猪肉【腔骨、脊骨】</h3>
-                                <p>北京市</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="u-lbbtn"><a href="#">查看所有热卖产品</a></div>
-            </div>
-            <div class="m-pblk">
-                <h2>探索品类</h2>
-                <p>搜罗各品类热门产品</p>
-                <div class="m-tb">
-                    <div class="m-tcell u-fruit">
-                        水果
-                    </div>
-                    <div class="m-tcell m-tcblc u-fwidth">
-                        <div class="m-tcbg u-blc"></div>
-                        <div class="m-tciner">
-                            <a href="#" alt="">
-                                <div class=" u-uhd u-blchd "></div>
-                                <h3>百里橙的产品</h3>
-                                <small>果蔬</small>
-                            </a>
-                        </div>
-                        <div class="u-price">
-                            <em>¥</em>88
-                        </div>
-                    </div>
+            <div class="m-demo">
+                <div class="m-iosvp">
+                    <div class="m-iospm"></div>
                 </div>
-                <div class="m-tb">
-                    <div class="m-tcell m-tcdbtc u-fwidth">
-                        <div class="m-tcbg u-dbtc"></div>
-                        <div class="m-tciner">
-                            <a href="#" alt="">
-                                <div class=" u-uhd u-dbtchd "></div>
-                                <h3>木子东北特产的产品</h3>
-                                <small>特产</small>
-                            </a>
-                        </div>
-                        <div class="u-price">
-                            <em>¥</em>2200
-                        </div>
-                    </div>
-                    <div class="m-tcell u-nuts">
-                        干货
-                    </div>
-                </div>
-                <div class="m-tb">
-                    <div class="m-tcell u-meat">
-                        肉类
-                    </div>
-                    <div class="m-tcell m-tcstnc u-fwidth">
-                        <div class="m-tcbg u-stnc"></div>
-                        <div class="m-tciner">
-                            <a href="#" alt="">
-                                <div class=" u-uhd u-stnchd "></div>
-                                <h3>昊赢生态农场的产品</h3>
-                                <small>果蔬</small>
-                            </a>
-                        </div>
-                        <div class="u-price">
-                            <em>¥</em>27
-                        </div>
-                    </div>
+                <div class="m-anvp">
+                    <div class="m-anpm"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="g-foot">
+    <div id="g-foot" class="g-foot">
         <div class="m-trust">
             <h3>以信任为基础的社区</h3>
             <ul>
                 <li>
                     <div class="m-info">
-                        <i class="Hui-iconfont ">&#xe6da;</i>
+                        <i class="Hui-iconfont">&#xe6da;</i>
                         <h4>微博验证</h4>
                         <p>使用你的微博账户登录以验证你的身份</p>
                     </div>
                 </li>
                 <li>
                     <div class="m-info">
-                        <i class="Hui-iconfont ">&#xe60e;</i>
+                        <i class="Hui-iconfont">&#xe60e;</i>
                         <h4>可信赖的服务</h4>
                         <p>维护盼她社区的信任和安全是我们的首要任务。</p>
                     </div>
                 </li>
                 <li>
                     <div class="m-info">
-                        <i class="Hui-iconfont ">&#xe71f;</i>
+                        <i class="Hui-iconfont">&#xe71f;</i>
                         <h4>安全支付</h4>
                         <p>支付宝付款现已面向全国用户开通，欢迎使用。</p>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="m-social ">
+        <div class="m-social">
             <h4>关注我们</h4>
-            <div class="m-logo ">
-                <a href="# "><i class="Hui-iconfont ">&#xe6da;</i></a>
-                <a href="# "><i class="Hui-iconfont ">&#xe67b;</i></a>
+            <div class="m-logo">
+                <a href="#"><i class="Hui-iconfont">&#xe6da;</i></a>
+                <a href="#"><i class="Hui-iconfont">&#xe67b;</i></a>
             </div>
-            <div class="m-copy ">&copy; 盼她</div>
+            <div class="m-copy">&copy; 盼她</div>
         </div>
     </div>
     <script src="./js/utils.es5.js"></script>
-    <script src="./js/index.es5.js"></script>
+    <script src="./js/wel.es5.js"></script>
 </body>
 
 </html>
