@@ -26,19 +26,19 @@
     -o-transition: all 1.2s;
 }
 .g-head .m-welbner{
-    background: url('./img/tgqc.jpg') no-repeat center/cover;
+    background: url('../img/tgqc.jpg') no-repeat center/cover;
 }
 .g-head .m-welbner-0{
-    background: url('./img/nms.jpg') no-repeat center/cover;
+    background: url('../img/nms.jpg') no-repeat center/cover;
 }
 .g-head .m-welbner-1{
-    background: url('./img/xjhz.jpg') no-repeat center/cover;
+    background: url('../img/xjhz.jpg') no-repeat center/cover;
 }
 .g-head .m-welbner-2{
-    background: url('./img/lca.jpg') no-repeat center/cover;
+    background: url('../img/lca.jpg') no-repeat center/cover;
 }
 .g-head .m-welbner-3{
-    background: url('./img/tgqc.jpg') no-repeat center/cover;
+    background: url('../img/tgqc.jpg') no-repeat center/cover;
 }
 
 /* 自适应水平垂直居中布局 h水平+v垂直+center居中 = hvcter */
@@ -61,7 +61,7 @@
     text-indent: -9999px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: url('./img/logo.png') rgba(22, 146, 78, .9) no-repeat center/140px;
+    background: url('../img/logo.png') rgba(22, 146, 78, .9) no-repeat center/140px;
 }
 .m-city .m-content{
     overflow: auto;
@@ -147,7 +147,7 @@
 /* 一个"引用"元件 */
 .u-quote:before{
     content: '';
-    background: url(./img/quotationmark-open.png) no-repeat center/cover;
+    background: url(../img/quotationmark-open.png) no-repeat center/cover;
     display: inline-block;
     *display:inline;
     *zoom:1;
@@ -157,7 +157,7 @@
 }
 .u-quote:after{
     content: '';
-    background: url(./img/quotationmark-closed.png) no-repeat center/cover;
+    background: url(../img/quotationmark-closed.png) no-repeat center/cover;
     display: inline-block;
     *display:inline;
     *zoom:1;
@@ -185,7 +185,7 @@
     padding-top:100px; 
     padding-left: 10px;
     color: #fff;
-    background: url(./img/mbg.jpg) no-repeat center/cover;
+    background: url(../img/mbg.jpg) no-repeat center/cover;
 }
 .m-down .m-downinfo{
     float: left;
@@ -215,7 +215,7 @@
     width: 195px;
     height: 60px;
     text-indent: -9999px;
-    background: url('./img/app-store-badge_zh.png') no-repeat center /cover;
+    background: url('../img/app-store-badge_zh.png') no-repeat center /cover;
 }
 .m-down .u-downan{
     display: inline-block;
@@ -224,7 +224,7 @@
     width: 195px;
     height: 60px;
     text-indent: -9999px;
-    background: url('./img/play-store-badge_zh.png') no-repeat center /cover;
+    background: url('../img/play-store-badge_zh.png') no-repeat center /cover;
 }
 .m-down .m-demo{
     overflow: hidden;
@@ -235,13 +235,13 @@
     float: left;
     width: 300px;
     height: 600px;
-    background: url('./img/iphone5s-white.png') no-repeat center/contain;
+    background: url('../img/iphone5s-white.png') no-repeat center/contain;
 }
 .m-down .m-anvp{
     z-index: 0;
     margin-left: -100px;
     margin-top: -30px;
-    background: url('./img/nexus5.png') no-repeat center/contain;
+    background: url('../img/nexus5.png') no-repeat center/contain;
 }
 
 .m-down .m-iospm{
@@ -250,7 +250,7 @@
     top: -7px;
     width: 200px;
     height: 600px;
-    background: url('./img/pm_ios.jpg') no-repeat left/contain;
+    background: url('../img/pm_ios.jpg') no-repeat left/contain;
 }
 .m-down .m-anpm{
     position: absolute;
@@ -258,7 +258,7 @@
     left: 55px;
     width: 200px;
     height: 600px;
-    background: url('./img/pm_android.jpg') no-repeat left/contain;
+    background: url('../img/pm_android.jpg') no-repeat left/contain;
 }
 
 
@@ -274,7 +274,7 @@
     display: table-cell;
     width: 100px;
     vertical-align: middle;
-    background:url(./img/logo.png) no-repeat center center / cover;
+    background:url(../img/logo.png) no-repeat center center / cover;
 }
 .m-menu{
     display: table-cell;
@@ -418,19 +418,19 @@
     padding-left: 10px;
 }
 .g-head .m-ibner{
-    background: url('./img/h1.jpg') no-repeat center/cover;
+    background: url('../img/h1.jpg') no-repeat center/cover;
 }
 .g-head .m-ibner-0{
-    background: url('./img/h2.jpg') no-repeat center/cover;
+    background: url('../img/h2.jpg') no-repeat center/cover;
 }
 .g-head .m-ibner-1{
-    background: url('./img/h3.jpg') no-repeat center/cover;
+    background: url('../img/h3.jpg') no-repeat center/cover;
 }
 .g-head .m-ibner-2{
-    background: url('./img/h4.jpg') no-repeat center/cover;
+    background: url('../img/h4.jpg') no-repeat center/cover;
 }
 .g-head .m-ibner-3{
-    background: url('./img/h1.jpg') no-repeat center/cover;
+    background: url('../img/h1.jpg') no-repeat center/cover;
 }
 
 .m-iads{
@@ -611,31 +611,31 @@
 
 /* 临时数据 */
 .g-wrap div:nth-of-type(2) li:nth-of-type(1){
-    background-image: url('./img/bk1.jpg');
+    background-image: url('../img/bk1.jpg');
 }
 .g-wrap div:nth-of-type(2) li:nth-of-type(2){
-    background-image: url('./img/bk2.jpg');
+    background-image: url('../img/bk2.jpg');
 }
 .g-wrap div:nth-of-type(2) li:nth-of-type(3){
-    background-image: url('./img/bk3.jpg');
+    background-image: url('../img/bk3.jpg');
 }
 .g-wrap div:nth-of-type(2) li:nth-of-type(4){
-    background-image: url('./img/bk4.jpg'); 
+    background-image: url('../img/bk4.jpg'); 
 }
 .g-wrap div:nth-of-type(2) li:nth-of-type(5){
-    background-image: url('./img/bk5.jpg');
+    background-image: url('../img/bk5.jpg');
 }
 .g-wrap div:nth-of-type(2) li:nth-of-type(6){
-    background-image: url('./img/bk6.jpg');
+    background-image: url('../img/bk6.jpg');
 }
 .g-wrap div:nth-of-type(3) li:nth-of-type(1){
-    background-image: url('./img/hot1.jpg');
+    background-image: url('../img/hot1.jpg');
 }
 .g-wrap div:nth-of-type(3) li:nth-of-type(2){
-    background-image: url('./img/hot2.jpg');
+    background-image: url('../img/hot2.jpg');
 }
 .g-wrap div:nth-of-type(3) li:nth-of-type(3){
-    background-image: url('./img/hot3.jpg');
+    background-image: url('../img/hot3.jpg');
 }
 .m-plist li a{
     color: #fff;
@@ -739,40 +739,40 @@
     border-radius: 50px;
 }
 .m-pblk .u-blchd{
-    background: url('./img/blcuser.jpg') no-repeat center/cover;
+    background: url('../img/blcuser.jpg') no-repeat center/cover;
 }
 .m-pblk .u-dbtchd{
-    background: url('./img/dbtcuser.jpg') no-repeat center/cover;
+    background: url('../img/dbtcuser.jpg') no-repeat center/cover;
 }
 .m-pblk .u-stnchd{
-    background: url('./img/stncuser.jpg') no-repeat center/cover;
+    background: url('../img/stncuser.jpg') no-repeat center/cover;
 }
 
 .m-pblk .u-fruit{
     font-size: 32px;
     font-weight: 500;
-    background: url('./img/fruit.jpg') no-repeat center/cover;
+    background: url('../img/fruit.jpg') no-repeat center/cover;
     /* IE8及以下低版本浏览器不支持background-size的解决办法 */
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/fruit.jpg',sizingMethod='scale');
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fruit.jpg',sizingMethod='scale');
 }
 .m-pblk .u-nuts{
     font-size: 32px;
     font-weight: 500;
-    background: url('./img/nuts.jpg') no-repeat center/cover;
+    background: url('../img/nuts.jpg') no-repeat center/cover;
 }
 .m-pblk .u-meat{
     font-size: 32px;
     font-weight: 500;
-    background: url('./img/meat.jpg') no-repeat center/cover;
+    background: url('../img/meat.jpg') no-repeat center/cover;
 }
 .m-pblk .u-blc{
-    background: url('./img/blc.jpg') no-repeat center /cover;
+    background: url('../img/blc.jpg') no-repeat center /cover;
 }
 .m-pblk .u-dbtc{
-    background: url('./img/dbtc.jpg') no-repeat center /cover;
+    background: url('../img/dbtc.jpg') no-repeat center /cover;
 }
 .m-pblk .u-stnc{
-    background: url('./img/stnc.jpg') no-repeat center /cover;
+    background: url('../img/stnc.jpg') no-repeat center /cover;
 }
 
 .m-tb .u-price{
