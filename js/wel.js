@@ -2,7 +2,7 @@
 
 // 如果本地已
 if (localStorage.getItem('city')) {
-    location.replace('/home.html');
+    location.replace('home.html');
 }
 
 var welBnerdata = {
