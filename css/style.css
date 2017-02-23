@@ -81,6 +81,10 @@
     font-size: 16.4px;
     padding: 0px 40px;
 }
+.m-city #f-cityError{
+    display: none;
+    color: #f00;
+}
 .m-city input[name="city"],.m-hvcter button{
     font: 18px 'Museo Sans Rounded', Verdana, 'Lucida Grande', sans-serif;
     border-radius: 13px;

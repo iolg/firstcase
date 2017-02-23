@@ -21,9 +21,10 @@
                     <p>
                         从全国各地农场购买可送货上门的新鲜农产品, 所有产品均大力推崇<strong>原生态生产</strong>, 客户服务<strong>及时到位</strong>可放心购买!
                     </p>
-                    <form name="cityForm" action="#" method="POST">
-                        <p><input type="text" name="city" placeholder="你的城市" required></p>
-                        <p><button type="submit">开始购物</button></p>
+                    <form name="cityForm" action="#">
+                        <p><input type="text" name="city" placeholder="您的城市,仅限上海/北京/杭州"></p>
+                        <p id="f-cityError">请输入有效的城市名称，如:上海</p>
+                        <p><button name="gobuy" type="submit">开始购物</button></p>
                     </form>
                 </div>
             </div>
