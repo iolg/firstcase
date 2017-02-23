@@ -391,9 +391,9 @@
     -o-transition: all .2s;
 }
 .m-menu .m-help dd:before{
-    content: '\e626';
-    font-family: Hui-iconfont;
-    font-size:18px;
+    content: '\e791';
+    font-family: "iconfont";
+    font-size:19px;
     position: absolute;
 }
 .m-menu .m-help dd:last-of-type{
@@ -535,28 +535,25 @@
     padding: 10px;
     text-align: left;
 }
-/* 降价icon */
 .u-icon-brdn:before{
-    content: '\e6ba';
-    font: 40px "Hui-iconfont";
+    content: '\e60e';
+    font: 40px "iconfont";
     display: inline-block;
     *display:inline;
     *zoom:1;
     vertical-align: middle;
 }
-/* 照相机icon */
 .u-icon-pt:before{
-    content: '\e650';
-    font: 40px "Hui-iconfont";
+    content: '\e7f0';
+    font: 40px "iconfont";
     display: inline-block;
     *display:inline;
     *zoom:1;
     vertical-align: middle;
 }
-/* 定位icon */
 .u-icon-adr:before{
-    content: '\e671';
-    font: 40px "Hui-iconfont";
+    content: '\e603';
+    font: 40px "iconfont";
     display: inline-block;
     *display:inline;
     *zoom:1;
@@ -818,8 +815,8 @@
     width: auto;
 }
 .m-otnav .m-search label:before{
-    content: '\e709';
-    font-family: Hui-iconfont;
+    content: '\e699';
+    font-family: "iconfont";
     color: #fff;
     font-size: 25px;
     padding-left: 5px;
@@ -875,10 +872,10 @@
     border-bottom: 1px solid #ddd;
 }
 #m-mstpty label:last-of-type:after{
-    content: '\e6d5';
+    content: '\e60f';
     position: absolute;
     right: 10px;
-    font-family: 'Hui-iconfont';
+    font-family: 'iconfont';
     font-size: 18px;
 }
 .m-mstm .m-mstcks input{
@@ -912,8 +909,8 @@
     padding-left:50px;
 }
 .m-mstm #m-mstcity label:before{
-    content: '\e6c9';
-    font-family: Hui-iconfont;
+    content: '\e650';
+    font-family: "iconfont";
     font-size: 25px;
     position: absolute;
     top:14px;
@@ -923,9 +920,9 @@
     display: none;
 }
 .m-mstm #m-mstdjbl label:after{
-    content: '\e6d7';
+    content: '\e620';
     font-size: 18px;
-    font-family: 'Hui-iconfont';
+    font-family: 'iconfont';
     position: absolute;
     right: 10px;
 }
@@ -1096,6 +1093,9 @@
     .m-down p{
         padding: 0 10px;
     }
+    .m-ftrlist small{
+        font-size: 13px;
+    }
 }
 
 
@@ -1117,7 +1117,7 @@
         text-align: center;
     }
     .m-ftrlist li[class|="u-icon"]:before{
-        content: '';
+        display: block;
     }
     .m-tcell.u-fruit,.m-tcell.u-meat,.m-tcell.u-nuts{
         display: none;
@@ -1175,6 +1175,12 @@
         position: absolute;
         right: 100px;
         top:22px;
+    }
+    .m-menu .u-buy i{
+        vertical-align: middle;
+    }
+    .m-menu .u-buy em{
+        vertical-align: middle;
     }
     .m-menu .u-buy a{
         background-color: transparent;
