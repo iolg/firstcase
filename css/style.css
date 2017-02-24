@@ -824,8 +824,6 @@
     margin: 0;
 }
 .m-mstm .m-mstad{
-    display: table-cell;
-    width: .1%;
     padding: 50px 0;
     text-align: center;
     background-color: #fff;
