@@ -1,7 +1,5 @@
 'use strict';
-if (localStorage.getItem('city')) {
-  location.replace('/home.html');
-}
+if (localStorage.getItem('city')) {}
 var welBnerdata = {
   'm-welbner-0': "新鲜的草原纯正羔羊肉！肉质鲜美、肥而不腻，无膻味！ - 内蒙羊肉.	// 赤峰, 内蒙古",
   'm-welbner-1': "新疆特有地理产品！红枣又称为“黄金寿枣”，民间有“一日食仨枣，百岁不显老”之说！ // 阿克苏, 新疆",
@@ -29,7 +27,7 @@ window.onload = function(ev) {
       return false;
     } else {
       localStorage.setItem('city', cityName);
-      location.replace('home.html');
+      location.href = 'home.html';
       return false;
     }
   };
