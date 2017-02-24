@@ -137,12 +137,12 @@ function menuToggle(toggle, menu, direction, begin, end) {
         let current = window.getComputedStyle(menu)[direction];
         current = parseInt(current.substring(0, current.length - 2))
         menu.style[direction] = current ? end : begin;
-    }
+    };
     // 点击在菜单上，禁止触发document的click事件
     menu.onclick = function (e) {
         e.cancleBubble = true;
         e.stopPropagation();
-    }
+    };
     document.body.addEventListener('click', remove);
     function remove(e) {
         menu.style[direction] = begin;

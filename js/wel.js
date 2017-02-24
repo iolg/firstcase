@@ -1,7 +1,7 @@
 'use strict';
 // 如果本地已
 if (localStorage.getItem('city')) {
-    location.href = 'home.html';
+    // location.href = 'home.html';
 }
 var welBnerdata = {
     'm-welbner-0': "新鲜的草原纯正羔羊肉！肉质鲜美、肥而不腻，无膻味！ - 内蒙羊肉.	// 赤峰, 内蒙古",
@@ -45,4 +45,4 @@ window.onload = function (ev) {
         cityErr.style.display = "none";
     };
 
-}
+};

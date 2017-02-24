@@ -81,7 +81,7 @@
     font-size: 16.4px;
     padding: 0px 40px;
 }
-.m-city #f-cityError{
+#f-cityError{
     display: none;
     color: #f00;
 }
@@ -359,7 +359,7 @@
     display: none;
     position: absolute;
     right: 14px;
-    top: 45px;
+    top: 46px;
     min-width: 300px;
     max-width: 400px;
     padding-bottom: 10px;
@@ -803,16 +803,13 @@
     background-color: #f5f5f5;
 }
 .m-otnav{
-    position: fixed;
-    z-index: 999;
-    top: 0;
     background-color: #2b2d2e;
 }
 
 .m-otnav .m-search input{
     background-color: #333;
     color: #fff;
-    width: auto;
+    width: 150px;
 }
 .m-otnav .m-search label:before{
     content: '\e699';
@@ -945,6 +942,7 @@
     text-align: center;
     border-right: 1px solid #fff;
     border-bottom: none;
+    padding: 0 2px;
 }
 
 .m-mstm #m-mstgoto label{
@@ -980,6 +978,10 @@
 }
 .m-mstf .m-trust li{
     font-weight: 300;
+}
+
+.m-mstcks p{
+    padding:5px 0;
 }
 
 
@@ -1096,6 +1098,15 @@
     .m-ftrlist small{
         font-size: 13px;
     }
+
+    #m-menu .u-master{
+        display: none;
+    }
+    .m-otnav .m-search input{
+        width:140px;
+    }
+
+
 }
 
 
@@ -1193,7 +1204,9 @@
     .m-menu .u-buy em:after{
         content: '件';
     }
-    
+    #m-menu .u-master{
+        display: block;
+    }
     .m-menu .u-master a{
         border: none;
         border-bottom: 1px solid #fff;
@@ -1218,6 +1231,57 @@
         border: 10px solid;
         border-color: transparent #edefed transparent  transparent;
     }
+
+    .m-otnav .m-search label{
+        position: absolute;
+        top:13px;
+        left:60px;
+        margin-right: 5px;
+    }
+    .m-otnav .m-search label input{
+        width:130px;
+    }
+
+    #m-mstpty{
+        margin:50px 5px 0;
+    }
+
+    .m-mstm .m-mstcks{
+        margin:20px 5px 0;
+    }
+
+    .m-mstm .m-mstcks label{
+        width: 100px;
+        height: 50px;
+    }
+    .m-mstm .m-mstcks label ul{
+        top:50px;
+    }
+    #m-mstdjbl label{
+        width:50px;
+        text-align: left;
+        padding-left: 5px;
+    }
+    .m-mstm #m-mstdjbl label:after{
+        right:5px;
+        font-size: 12px;
+    }
+    .m-mstm #m-mstdjbl label ul{
+        left:56px;
+        height:50px;
+    }
+    .m-mstm #m-mstcity label:before{
+        top:0;
+    }
+    #m-mstpty label:last-of-type:after{
+        right: 5px;
+        font-size: 12px;
+    }
+
+    .m-trust h4{
+        font-size: 16px;
+    }
+
     .u-lbbtn a:hover{
         background-color: #fff;
     }
@@ -1233,7 +1297,49 @@
     
 }
 
+@media screen and (max-width:376px){
+    .m-otnav .m-search input{
+        padding:8px 0;
+    }
+    .m-otnav .m-search label input{
+        width:115px;
+    }
+    .m-otnav .m-search label:before{
+        padding-left: 0;
+    }
+    .m-mstm .m-mstcks label{
+        width:90px;
+    }
+    #m-mstpty label:last-of-type:after,.m-mstm #m-mstdjbl label:after{
+        right: 5px;
+        font-size: 12px;
+    }
+
+}
+
 @media screen and (max-width:321px){
+    .m-city p{
+        padding:0 20px;
+    }
+    .m-otnav .m-search label{
+        height: 34px;
+        line-height: 34px;
+        width:25px;
+        overflow: hidden;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+    .m-otnav .m-search label:hover{
+        width:150px;
+        z-index: 999;
+    }
+    .m-otnav .m-search label:active{
+        width:150px;
+        z-index: 999;
+    }
     .m-ftrlist{
         display: none;
     }
@@ -1242,5 +1348,18 @@
     }
     .m-trust h4{
         font-size: 16px;
+    }
+    .m-mstm .m-mstcks label{
+        width:76px;
+    }
+    #m-mstpty label:last-of-type:after,.m-mstm #m-mstdjbl label:after{
+        right: 5px;
+        font-size: 12px;
+    }
+    .m-mstm #m-mstdjbl label li{
+        padding:0 1px;
+    }
+    .m-trust h4{
+        font-size: 14px;
     }
 }
