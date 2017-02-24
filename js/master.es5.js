@@ -92,7 +92,7 @@ function isGoto() {
   } else if (pty && slty && puty && city) {
     master.ugoto.removeAttribute('disabled');
   } else {
-    master.ugoto.setAttribute('disabled');
+    master.ugoto.setAttribute('disabled', 'disabled');
   }
 }
 function chgPtyBg(e) {
