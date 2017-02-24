@@ -10,14 +10,14 @@ window.onload = function (ev) {
     master.djbl = document.getElementById('m-mstdjbl');
     master.mstputy = document.getElementById('m-mstputy');
     master.mstcity = document.getElementById('u-city'),
-    master.ugoto = document.getElementById('u-goto');
+        master.ugoto = document.getElementById('u-goto');
     master.ugoto.onclick = function (ev) {
-      location.href='/home.html';
+        location.href = '/home.html';
     };
     master.ptylabels = [];
     master.mstsltyLabels = [];
-    master.mstputyLabels =[];
-    master.citys = ['上海','北京','杭州'];
+    master.mstputyLabels = [];
+    master.citys = ['上海', '北京', '杭州'];
     //添加产品类型的点击事件
     for (var i = 0; i < master.pty.children.length; i++) {
         if (master.pty.children[i].tagName.toLowerCase() === 'label') {
@@ -54,9 +54,9 @@ window.onload = function (ev) {
     master.mstcity.oninput = inputCity;
 
     //点击其他区域隐藏列表
-    document.body.onclick = function(e){
+    document.body.onclick = function (e) {
         // label通过 for关联input，点击label的事件流为 label -> body -> input -> label ->body
-        if(e.target.nodeName === 'DIV'){
+        if (e.target.nodeName === 'DIV') {
             toggleDjblOps('hide');
             toggleOps('hide');
         }
@@ -80,33 +80,33 @@ window.onload = function (ev) {
 };
 
 //判断所有项是否有值
-function isGoto(){
-    let pty,slty,puty,djbl,city;
-    for(let i=0; i<master.ptylabels.length; i++){
-        if(master.ptylabels[i].control.checked){
+function isGoto() {
+    let pty, slty, puty, djbl, city;
+    for (let i = 0; i < master.ptylabels.length; i++) {
+        if (master.ptylabels[i].control.checked) {
             pty = master.ptylabels[i].control.value;
         }
     }
-    for(let i=0; i<master.mstsltyLabels.length; i++){
-        if(master.mstsltyLabels[i].control.checked){
+    for (let i = 0; i < master.mstsltyLabels.length; i++) {
+        if (master.mstsltyLabels[i].control.checked) {
             slty = master.mstsltyLabels[i].control.value;
         }
     }
-    for(let i=0; i<master.mstputyLabels.length; i++){
-        if(master.mstputyLabels[i].control.checked){
+    for (let i = 0; i < master.mstputyLabels.length; i++) {
+        if (master.mstputyLabels[i].control.checked) {
             puty = master.mstputyLabels[i].control.value;
         }
     }
-    if(master.citys.indexOf(master.mstcity.value.trim()) !== -1){
+    if (master.citys.indexOf(master.mstcity.value.trim()) !== -1) {
         city = master.mstcity.value.trim();
     }
-    if(slty === "预售" && pty && slty && puty && city){
+    if (slty === "预售" && pty && slty && puty && city) {
         djbl = master.djbl.children[1].control.value;
         master.ugoto.removeAttribute('disabled');
-    } else if(pty&&slty&&puty&&city){
+    } else if (pty && slty && puty && city) {
         master.ugoto.removeAttribute('disabled');
     } else {
-        master.ugoto.setAttribute('disabled');
+        master.ugoto.setAttribute('disabled', 'disabled');
     }
 }
 
@@ -137,13 +137,13 @@ function chgPtyBg(e) {
     // 判断点中的是否是最后一个label
     if (e.target.id === 'u-ot') {
         if (master.otops.style.visibility === 'visible') {
-            console.log('u-out',e.target);
+            console.log('u-out', e.target);
             toggleOps('hide');
         } else {
-            console.log('u-outss',e.target,master.otops.style.visibility);
+            console.log('u-outss', e.target, master.otops.style.visibility);
             toggleOps('show');
         }
-    } else{
+    } else {
         isGoto();
     }
     toggleDjblOps('hide');
@@ -265,7 +265,7 @@ function chgPutyBg(e) {
     isGoto();
 }
 
-function inputCity(e){
+function inputCity(e) {
     isGoto();
 }
 
