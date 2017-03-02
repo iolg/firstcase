@@ -136,6 +136,7 @@ function chgOt(e) {
   isGoto();
 }
 function toggleOps(key) {
+  console.log('hide:', key);
   if (master.otops) {
     if (key === 'show') {
       master.otops.style.cssText = "visibility:visible;height:204px;";
@@ -200,6 +201,7 @@ function chgdjOt(e) {
   isGoto();
 }
 function chgPutyBg(e) {
+  toggleOps('hide');
   e.cancelBubble = true;
   e.stopPropagation();
   addClass(e.target.parentNode, 'f-selected');
