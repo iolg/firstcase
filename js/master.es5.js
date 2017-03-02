@@ -1,6 +1,6 @@
 'use strict';
 var master = {};
-window.onload = function(ev) {
+window.onload = function (ev) {
   init();
   master.pty = document.getElementById('m-mstpty');
   master.otops = document.getElementById('u-otops');
@@ -9,7 +9,7 @@ window.onload = function(ev) {
   master.djbl = document.getElementById('m-mstdjbl');
   master.mstputy = document.getElementById('m-mstputy');
   master.mstcity = document.getElementById('u-city'), master.ugoto = document.getElementById('u-goto');
-  master.ugoto.onclick = function(ev) {
+  master.ugoto.onclick = function (ev) {
     location.href = '/home.html';
   };
   master.ptylabels = [];
@@ -42,15 +42,15 @@ window.onload = function(ev) {
     master.djops.children[i].onclick = chgdjOt;
   }
   master.mstcity.oninput = inputCity;
-  document.body.onclick = function(e) {
+  document.body.onclick = function (e) {
     if (e.target.nodeName === 'DIV') {
       toggleDjblOps('hide');
       toggleOps('hide');
     }
   };
   var mstuCity = document.getElementById('u-city'),
-      cityErr = document.getElementById('f-cityError');
-  mstuCity.onblur = function() {
+    cityErr = document.getElementById('f-cityError');
+  mstuCity.onblur = function () {
     var cityName = mstuCity.value.trim() || "";
     if (!cityName || master.citys.indexOf(cityName) === -1) {
       mstuCity.parentNode.style.border = "2px solid #f00";
@@ -64,10 +64,10 @@ window.onload = function(ev) {
 };
 function isGoto() {
   var pty,
-      slty,
-      puty,
-      djbl,
-      city;
+    slty,
+    puty,
+    djbl,
+    city;
   for (var i = 0; i < master.ptylabels.length; i++) {
     if (master.ptylabels[i].control.checked) {
       pty = master.ptylabels[i].control.value;
@@ -96,7 +96,6 @@ function isGoto() {
   }
 }
 function chgPtyBg(e) {
-  console.log('chgPtyBg');
   e.cancelBubble = true;
   e.stopPropagation();
   addClass(e.target.parentNode, 'f-selected');
@@ -116,10 +115,8 @@ function chgPtyBg(e) {
   }
   if (e.target.id === 'u-ot') {
     if (master.otops.style.visibility === 'visible') {
-      console.log('u-out', e.target);
       toggleOps('hide');
     } else {
-      console.log('u-outss', e.target, master.otops.style.visibility);
       toggleOps('show');
     }
   } else {
@@ -128,7 +125,6 @@ function chgPtyBg(e) {
   toggleDjblOps('hide');
 }
 function chgOt(e) {
-  console.log('chgOt');
   e.preventDefault();
   e.target.parentNode.parentNode.firstChild.textContent = e.target.textContent;
   e.target.parentNode.parentNode.children[0].value = e.target.textContent;
@@ -136,7 +132,6 @@ function chgOt(e) {
   isGoto();
 }
 function toggleOps(key) {
-  console.log('hide:', key);
   if (master.otops) {
     if (key === 'show') {
       master.otops.style.cssText = "visibility:visible;height:204px;";

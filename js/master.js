@@ -166,7 +166,6 @@ function chgOt(e) {
 
 //显示/关闭产品类型的其他项
 function toggleOps(key) {
-    console.log('hide:', key);
     if (master.otops) {
         if (key === 'show') {
             master.otops.style.cssText = "visibility:visible;height:204px;";
